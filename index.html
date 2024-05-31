@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Tic-tac-toe</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        
+        <link rel="icon" type="image/png" href="img/flavicon.png" />
+        <meta name="viewport" content="width=device-width" />
+    </head>
+    <body>
+        <div class="slide defaultBackground" id="landingPage">
+            <h1>
+                Online tic-tac-toe
+            </h1>
+            <div align="center">
+                Welcome to online Tic-tac-toe.<br><br>
+                <button id="btnNewGame">Create a new game</button>
+                <button id="btnExistGame">Connet to an existing game</button>
+            </div>
+        </div>
+        <div class="slide defaultBackground" id="newGamePage" align="center">
+            <h1>
+                Online tic-tac-toe
+            </h1>
+            Your nickname:<br>
+            <input type="text" id="masterNickname"><br><br>
+            <button id="createGame">Create</button><br><br>
+            <div id="masterStatus"></div>
+        </div>
+        <div class="slide defaultBackground" id="existingGamePage" align="center">
+            <h1>
+                Online tic-tac-toe
+            </h1>
+            Your nickname:<br>
+            <input type="text" id="slaveNickname"><br><br>
+            Input the room id:<br>
+            <input type="text" id="opponentId"><br><br>
+            <button id="connect">Connect</button><br><br>
+            <div id="slaveStatus"></div>
+        </div>
+        <div class="slide defaultBackground" id="gamePage">
+            <div id="gamePageElements">
+                <h1>
+                    Online tic-tac-toe
+                </h1>
+                <div class="tableCentered">
+                    <table>
+                        <tr><td><button id="btn00" onclick="clicked(0, 0)" class="buttonTris"></button></td><td><button id="btn01" onclick="clicked(0, 1)" class="buttonTris"></button></td><td><button id="btn02" onclick="clicked(0, 2)" class="buttonTris"></button></td></tr>
+                        <tr><td><button id="btn10" onclick="clicked(1, 0)" class="buttonTris"></button></td><td><button id="btn11" onclick="clicked(1, 1)" class="buttonTris"></button></td><td><button id="btn12" onclick="clicked(1, 2)" class="buttonTris"></button></td></tr>
+                        <tr><td><button id="btn20" onclick="clicked(2, 0)" class="buttonTris"></button></td><td><button id="btn21" onclick="clicked(2, 1)" class="buttonTris"></button></td><td><button id="btn22" onclick="clicked(2, 2)" class="buttonTris"></button></td></tr>
+                    </table>
+                </div>
+                <div id="divIsMyTurn"></div>
+            </div>
+        </div>
+    </body> 
+    <script src="https://unpkg.com/peerjs@1.5.0/dist/peerjs.min.js"></script>
+    <script src="app.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        toSlide("landingPage");
+    </script>
+</html>

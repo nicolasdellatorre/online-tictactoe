@@ -1,0 +1,178 @@
+@font-face {
+    font-family: "breul";
+    src: url("font/BreulGroteskA-Bold.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "inter";
+    src: url("font/Inter-Medium.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "inter-light";
+    src: url("font/Inter-Light.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+div.slide {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    opacity: 0;
+    overflow-y: auto;
+    transition: all 0.4s;
+    padding: 0.5rem;
+}
+
+div.slide.visible {
+    opacity: 1;
+    z-index: 1;
+}
+
+div.slide.hidden {
+    opacity: 0;
+    z-index: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: "breul";
+    font-size: 4rem;
+    color: #0D3B66;
+}
+
+.defaultBackground {
+    background-color: #FAF0CA;
+}
+
+button {    
+    border: solid 0.15rem #0D3B66;
+    font-size: 1rem;
+    font-family: "inter";
+    border-radius: 10px;
+    background-color: #F4D35E;
+}
+
+button:hover {
+    background-color: #EE964B;
+    transition: 0.5s;
+}
+
+button:active {
+    background-color: #F95738;
+    transition: 0.5s;
+}
+
+input {
+    border-radius: 10px;
+    border: solid 0.1rem #0D3B66;
+    font-size: 1rem;
+    height: 1.5rem;
+}
+
+#btnNewGame {
+    height: 3rem;
+    width: auto;
+}
+
+#btnExistGame {
+    height: 3rem;
+    width: auto;
+}
+
+div {
+    font-family: "inter-light";
+    font-size: 1.5rem;
+}
+
+.scoreBoard {
+    font-family: "inter";
+    font-size: 2rem;
+}
+
+th, td {
+    border: medium solid black;
+    width: 5rem;
+    height: 5rem;
+    border-spacing: 0rem;
+    text-align: center;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+.buttonTris{
+    width: 3rem;
+    height: 3rem;
+    background-color: #FAF0CA;
+    border: none;
+    text-align: center;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+.buttonTris:hover {
+    background-color: #FAF0CA;
+}
+
+.buttonTris:active {
+    background-color: #FAF0CA;
+}
+
+.imgSize {
+    width: 3rem;
+    height: auto;
+}
+
+table {
+    border: solid 1px #0D3B66;
+    border-collapse: collapse;
+    border-spacing: 2px; 
+    background-color: #FAF0CA;
+}
+
+.tableCentered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -10rem;
+    margin-left: -10rem;
+    z-index: 2;
+}
+
+.winPopUp {
+    z-index: 3;
+    position: fixed;
+    top: 30%; bottom: 30%; left: 30%; right: 30%;
+    background-color: #F4D35E;
+    border-radius: 10px;
+    border: 2px solid #EE964B;
+    padding: 1rem;
+    text-align: center;
+}
+
+.blured {
+    -webkit-filter: blur(3px); 
+	-moz-filter: blur(3px); 
+	-o-filter: blur(3px); 
+	-ms-filter: blur(3px); 
+	filter: blur(3px); 
+}
+
+#gamePageElements {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;   
+    overflow-y: auto;
+    transition: all 0.4s;
+}
+
+#divIsMyTurn {
+    padding: 1rem;
+}
+
+.buttonPopUp {
+    bottom: 0.5rem;
+}
